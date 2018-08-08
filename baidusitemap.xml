@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>https://guangtianli.github.io/Python/Ubuntu16.04%E5%AE%89%E8%A3%85Python3.6.html</loc>
+    <lastmod>2018-08-08T05:34:21.468Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04构建Python3.6开发环境</title>
+        <pubTime>2018-01-08T04:00:00.000Z</pubTime>
+        
+        <tag>Ubuntu16.04</tag>
+         
+        <tag>setup</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://guangtianli.github.io/categories/Python/"/>
+          
+             
+              <breadCrumb title="setup" url="https://guangtianli.github.io/categories/Python/setup/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://guangtianli.github.io/Ubuntu/Ubuntu16.04%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.html</loc>
     <lastmod>2018-08-08T03:16:57.324Z</lastmod>
     <data>
@@ -13,9 +40,9 @@
         
         <tag>Ubuntu16.04</tag>
          
-        <tag>setup</tag>
-         
         <tag>Server</tag>
+         
+        <tag>setup</tag>
          
          
            
@@ -24,33 +51,6 @@
           
              
               <breadCrumb title="setup" url="https://guangtianli.github.io/categories/Ubuntu/setup/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://guangtianli.github.io/Python/Ubuntu16.04%E5%AE%89%E8%A3%85Python3.6.html</loc>
-    <lastmod>2018-08-08T03:02:38.918Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04构建Python3.6开发环境</title>
-        <pubTime>2018-01-08T04:00:00.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Ubuntu16.04</tag>
-         
-        <tag>setup</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://guangtianli.github.io/categories/Python/"/>
-          
-             
-              <breadCrumb title="setup" url="https://guangtianli.github.io/categories/Python/setup/"/>
           
         </display>
     </data>

@@ -23,22 +23,22 @@
       </categories>
       <tags>
         <tag>Ubuntu16.04</tag>
-        <tag>setup</tag>
         <tag>Server</tag>
+        <tag>setup</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Ubuntu16.04构建Python3.6开发环境]]></title>
     <url>%2FPython%2FUbuntu16.04%E5%AE%89%E8%A3%85Python3.6.html</url>
-    <content type="text"><![CDATA[Python is an easy to learn, powerful programming language. Python Tutorial 安装Python3.6Ubuntu 14.04 and 16.04添加add-apt-repository命令sudo apt-get install software-properties-common 通过PPA安装123sudo add-apt-repository ppa:jonathonf/python-3.6sudo apt-get updatesudo apt-get install python3.6 Ubuntu 16.10 and 17.0412sudo apt-get updatesudo apt-get install python3.6 安装python-dev用于避免安装包时出缺少 Python.h 而安装失败 1sudo apt-get install python3.6-dev 安装pip12wget https://bootstrap.pypa.io/get-pip.pypython3.6 get-pip.py 安装pipenv官方文档 pip3.6 install pipenv 手动构建pipenv环境由于pipenv必须使用install命令，才能自动生成Pipfile文件，并且构建虚拟环境。而由于国内使用官方源安装实在过于缓慢，所有推荐手动构建Pipfile文件 手动构建Pipfile123456789101112cd your-projectvim Pipfile```[[source]]url = &quot;https://mirrors.aliyun.com/pypi/simple/&quot;verify_ssl = truename = &quot;pypi&quot;[requires]python_version = &quot;3.6&quot;```pipenv install ipython 自动构建pipenv环境使用 pipenv install 即可初始化当前虚拟环境，自动生成 Pipfile，Pipfile.lock12cd your-projectpipenv install ipython 使用阿里pypi源编辑Pipfile，将源替换替换为url = “https://mirrors.aliyun.com/pypi/simple/&quot;123vim your-project/Pipfile~~url = &quot;https://pypi.org/simple&quot;~~url = &quot;https://mirrors.aliyun.com/pypi/simple/&quot;]]></content>
+    <content type="text"><![CDATA[Python is an easy to learn, powerful programming language. Python Tutorial 安装Python3.6Ubuntu 14.04 and 16.04添加add-apt-repository命令sudo apt-get install software-properties-common 通过PPA安装123sudo add-apt-repository ppa:jonathonf/python-3.6sudo apt-get updatesudo apt-get install python3.6 Ubuntu 16.10 and 17.0412sudo apt-get updatesudo apt-get install python3.6 安装python-dev用于避免安装包时出缺少 Python.h 而安装失败 1sudo apt-get install python3.6-dev 安装pip12wget https://bootstrap.pypa.io/get-pip.pypython3.6 get-pip.py 安装pipenv官方文档 pip3.6 install pipenv 构建pipenv环境生成Pipfile, 添加阿里源1234567891011121314151617181920cd your-projectpipenv lockvim Pipfile```[[source]]~~url = &quot;https://pypi.org/simple&quot;~~url = &quot;https://mirrors.aliyun.com/pypi/simple/&quot;verify_ssl = truename = &quot;pypi&quot;[packages][dev-packages][requires]python_version = &quot;3.6&quot;```pipenv install ipythonpipenv shellipython]]></content>
       <categories>
         <category>Python</category>
         <category>setup</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>Ubuntu16.04</tag>
         <tag>setup</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
