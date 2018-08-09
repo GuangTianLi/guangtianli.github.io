@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[VueJS项目初始化]]></title>
     <url>%2FVue%2FVueJS%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.html</url>
-    <content type="text"><![CDATA[安装Vuejs-template webpacke官方文档官方文档 初始化项目12345npm install -g vue-clivue init webpack my-projectcd my-projectnpm installnpm run dev ESlint修复配置 - WebStorm添加External Tools在WebStorm/Preference/External Tools/中通过 + 按键添加ESlint fix 添加快捷键在WebStorm/Preference/中搜索 Eslint-fix 添加快捷键 使用在任意js文件使用之前设置的快捷键，即可完成ESlint fix]]></content>
+    <content type="text"><![CDATA[() 安装Vuejs-template webpacke官方文档官方文档 初始化项目12345npm install -g vue-clivue init webpack my-projectcd my-projectnpm installnpm run dev ESlint修复配置 - WebStorm添加External Tools在WebStorm/Preference/External Tools/中通过 + 按键添加ESlint fix 添加快捷键在WebStorm/Preference/中搜索 Eslint-fix 添加快捷键 使用在任意js文件使用之前设置的快捷键，即可完成ESlint fix]]></content>
       <categories>
         <category>Vue.js</category>
         <category>setup</category>
@@ -16,7 +16,7 @@
   <entry>
     <title><![CDATA[Ubuntu16.04服务器基础构建]]></title>
     <url>%2FUbuntu%2FUbuntu16.04%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.html</url>
-    <content type="text"><![CDATA[有了服务器你就拥有了一切 安装 oh-my-zsh官方文档 安装并配置 npm12sudo apt-get install npmnpm config set registry=http://registry.npm.taobao.org 安装 docker CE官方文档 阿里云加速 1pip3 install docker-compose 安装 Nginx1sudo apt-get install nginx 修复 Nginx 在 Ubuntu 下的 Bug1234sudo mkdir /etc/systemd/system/nginx.service.dsudo printf &quot;[Service]\nExecStartPost=/bin/sleep 0.1\n&quot; &gt; /etc/systemd/system/nginx.service.d/override.confsystemctl daemon-reloadsudo systemctl restart nginx CertbotCertbot帮助网站自动免费生成HTTPS证书，并且自动续期。 官方文档 安装12345sudo apt-get updatesudo apt-get install software-properties-commonsudo add-apt-repository ppa:certbot/certbotsudo apt-get updatesudo apt-get install python-certbot-nginx]]></content>
+    <content type="text"><![CDATA[工欲善其事，必先利其器 安装git1sudo apt-get install git 安装 oh-my-zsh官方文档 1sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" 安装Python3.6[参见] 前端安装 Node.js官方下载 或者直接通过包管理工具安装12curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs 安装并配置 npm12sudo apt-get install npmnpm config set registry=http://registry.npm.taobao.org 安装 docker CE过程较多，直接参照官方文档 安装完之后，配置阿里云镜像加速——阿里云加速 可选安装 docker-compose官方文档1pip3 install docker-compose 安装 Nginx1sudo apt-get install nginx 修复 Nginx 在 Ubuntu 下的 Bug1234sudo mkdir /etc/systemd/system/nginx.service.dsudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" &gt; /etc/systemd/system/nginx.service.d/override.confsystemctl daemon-reloadsudo systemctl restart nginx CertbotCertbot帮助网站自动免费生成HTTPS证书，并且自动续期。 官方文档 安装12345sudo apt-get updatesudo apt-get install software-properties-commonsudo add-apt-repository ppa:certbot/certbotsudo apt-get updatesudo apt-get install python-certbot-nginx]]></content>
       <categories>
         <category>Ubuntu</category>
         <category>setup</category>
@@ -30,7 +30,7 @@
   <entry>
     <title><![CDATA[Ubuntu16.04构建Python3.6开发环境]]></title>
     <url>%2FPython%2FUbuntu16.04%E5%AE%89%E8%A3%85Python3.6.html</url>
-    <content type="text"><![CDATA[Python is an easy to learn, powerful programming language. Python Tutorial 安装Python3.6Ubuntu 14.04 and 16.04添加add-apt-repository命令sudo apt-get install software-properties-common 通过PPA安装123sudo add-apt-repository ppa:jonathonf/python-3.6sudo apt-get updatesudo apt-get install python3.6 Ubuntu 16.10 and 17.0412sudo apt-get updatesudo apt-get install python3.6 安装python-dev用于避免安装包时出缺少 Python.h 而安装失败 1sudo apt-get install python3.6-dev 安装pip12wget https://bootstrap.pypa.io/get-pip.pypython3.6 get-pip.py 安装pipenv官方文档 pip3.6 install pipenv 构建pipenv环境生成Pipfile, 添加阿里源1234567891011121314151617181920cd your-projectpipenv lockvim Pipfile```[[source]]~~url = &quot;https://pypi.org/simple&quot;~~url = &quot;https://mirrors.aliyun.com/pypi/simple/&quot;verify_ssl = truename = &quot;pypi&quot;[packages][dev-packages][requires]python_version = &quot;3.6&quot;```pipenv install ipythonpipenv shellipython]]></content>
+    <content type="text"><![CDATA[Python is an easy to learn, powerful programming language. Python Tutorial 安装Python3.6Ubuntu 14.04 and 16.04添加add-apt-repository命令1sudo apt-get install software-properties-common 通过PPA安装123sudo add-apt-repository ppa:jonathonf/python-3.6sudo apt-get updatesudo apt-get install python3.6 Ubuntu 16.10 and 17.0412sudo apt-get updatesudo apt-get install python3.6 安装python-dev用于避免安装包时出缺少 Python.h 而安装失败 1sudo apt-get install python3.6-dev 安装pip12wget https://bootstrap.pypa.io/get-pip.pypython3.6 get-pip.py 安装pipenv官方文档 1pip3.6 install pipenv 构建pipenv环境生成Pipfile, 添加阿里源 1234567891011121314151617181920cd your-projectpipenv lockvim Pipfile[[source]]~~url = "https://pypi.org/simple"~~url = "https://mirrors.aliyun.com/pypi/simple/"verify_ssl = truename = "pypi"[packages][dev-packages][requires]python_version = "3.6"pipenv install ipythonpipenv shellipython]]></content>
       <categories>
         <category>Python</category>
         <category>setup</category>
