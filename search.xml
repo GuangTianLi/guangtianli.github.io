@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[CSS？？？]]></title>
     <url>%2FCSS%EF%BC%9F%EF%BC%9F%EF%BC%9F.html</url>
-    <content type="text"><![CDATA[真正的勇士敢于直面纷繁的叠层样式表 前言该博文主要用于记录各种在调整CSS以满足酷炫的效果各种各样需求中遇到的问题，以及解决方案。 Footer置底最实用的Footer置底css设置–使用calc()实现动态计算。 1234&lt;div class="content"&gt; &lt;!-- content --&gt;&lt;/div&gt;&lt;div class="footer"&gt;footer&lt;/div&gt; 123456.content &#123; min-height: calc(100vh - （x + y)px); /*y为content与footer之间的距离*/&#125;.footer &#123; height: x px;&#125;]]></content>
+    <content type="text"><![CDATA[真正的勇士敢于直面纷繁的叠层样式表 前言该博文主要用于记录各种在调整CSS以满足各种各样需求酷炫的效果中遇到的问题，以及解决方案。 Footer置底最实用的Footer置底css设置–使用calc()实现动态计算。 1234&lt;div class="content"&gt; &lt;!-- content --&gt;&lt;/div&gt;&lt;div class="footer"&gt;footer&lt;/div&gt; 123456.content &#123; min-height: calc(100vh - （x + y)px); /*y为content与footer之间的距离*/&#125;.footer &#123; height: x px;&#125;]]></content>
       <categories>
         <category>css</category>
       </categories>
@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[在Vue中使用scss]]></title>
     <url>%2FVue%2F%E5%9C%A8Vue%E4%B8%AD%E4%BD%BF%E7%94%A8scss.html</url>
-    <content type="text"><![CDATA[使用 文档]]></content>
+    <content type="text"><![CDATA[使用 &lt;style lang=&#39;scss&#39;&gt;解决方案 1npm install -D sass-loader node-sass 然后在webpack config中添加12345678910111213141516171819module.exports = &#123; module: &#123; rules: [ // ... other rules omitted // this will apply to both plain `.scss` files // AND `&lt;style lang="scss"&gt;` blocks in `.vue` files &#123; test: /\.scss$/, use: [ 'vue-style-loader', 'css-loader', 'sass-loader' ] &#125; ] &#125;, // plugin omitted&#125; 现在就可以导入scss文件了。1import 'style.scss'或者123&lt;style lang="scss"&gt;/* write SCSS here */&lt;/style&gt;]]></content>
       <categories>
         <category>Vue.js</category>
         <category>scss</category>
@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[VueJS项目初始化]]></title>
     <url>%2FVue%2FVueJS%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.html</url>
-    <content type="text"><![CDATA[() 安装Vuejs-template webpacke官方文档官方文档 初始化项目12345npm install -g vue-clivue init webpack my-projectcd my-projectnpm installnpm run dev ESlint修复配置 - WebStorm添加External Tools在WebStorm/Preference/External Tools/中通过 + 按键添加ESlint fix 添加快捷键在WebStorm/Preference/中搜索 Eslint-fix 添加快捷键 使用在任意js文件使用之前设置的快捷键，即可完成ESlint fix]]></content>
+    <content type="text"><![CDATA[安装Vuejs-template webpacke官方文档官方文档 初始化项目12345npm install -g vue-clivue init webpack my-projectcd my-projectnpm installnpm run dev ESlint修复配置 - WebStorm添加External Tools在WebStorm/Preference/External Tools/中通过 + 按键添加ESlint fix 添加快捷键在WebStorm/Preference/中搜索 Eslint-fix 添加快捷键 使用在任意js文件使用之前设置的快捷键，即可完成ESlint fix]]></content>
       <categories>
         <category>Vue.js</category>
         <category>setup</category>
@@ -47,8 +47,8 @@
       </categories>
       <tags>
         <tag>Ubuntu16.04</tag>
-        <tag>Server</tag>
         <tag>setup</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -60,9 +60,9 @@
         <category>setup</category>
       </categories>
       <tags>
+        <tag>Python</tag>
         <tag>Ubuntu16.04</tag>
         <tag>setup</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
