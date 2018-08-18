@@ -127,7 +127,7 @@
 <meta property="og:site_name" content="Soon">
 <meta property="og:description" content="使用Python从安装Python开始">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-09T13:27:14.490Z">
+<meta property="og:updated_time" content="2018-08-18T04:22:27.708Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04构建Python3.6开发环境">
 <meta name="twitter:description" content="使用Python从安装Python开始">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-09 21:27:14" itemprop="dateModified" datetime="2018-08-09T21:27:14+08:00">2018-08-09</time>
+                <time title="修改时间：2018-08-18 12:22:27" itemprop="dateModified" datetime="2018-08-18T12:22:27+08:00">2018-08-18</time>
               
             
           </span>
@@ -479,7 +479,14 @@
 <h1 id="安装pipenv"><a href="#安装pipenv" class="headerlink" title="安装pipenv"></a>安装pipenv</h1><p><a href="https://docs.pipenv.org/" target="_blank" rel="noopener">官方文档</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3.6 install pipenv</span><br></pre></td></tr></table></figure>
 <h2 id="构建pipenv环境"><a href="#构建pipenv环境" class="headerlink" title="构建pipenv环境"></a>构建pipenv环境</h2><p>生成Pipfile, 添加阿里源</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> your-project</span><br><span class="line">pipenv lock</span><br><span class="line">vim Pipfile</span><br><span class="line"></span><br><span class="line">[[<span class="built_in">source</span>]]</span><br><span class="line">~~url = <span class="string">"https://pypi.org/simple"</span>~~</span><br><span class="line">url = <span class="string">"https://mirrors.aliyun.com/pypi/simple/"</span></span><br><span class="line">verify_ssl = <span class="literal">true</span></span><br><span class="line">name = <span class="string">"pypi"</span></span><br><span class="line"></span><br><span class="line">[packages]</span><br><span class="line"></span><br><span class="line">[dev-packages]</span><br><span class="line"></span><br><span class="line">[requires]</span><br><span class="line">python_version = <span class="string">"3.6"</span></span><br><span class="line"></span><br><span class="line">pipenv install ipython</span><br><span class="line">pipenv shell</span><br><span class="line">ipython</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> your-project</span><br><span class="line">pipenv lock</span><br><span class="line">vim Pipfile</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>[[source]]<br><del>url = “<a href="https://pypi.org/simple&quot;" target="_blank" rel="noopener">https://pypi.org/simple&quot;</a></del><br>url = “<a href="https://mirrors.aliyun.com/pypi/simple/&quot;" target="_blank" rel="noopener">https://mirrors.aliyun.com/pypi/simple/&quot;</a><br>verify_ssl = true<br>name = “pypi”</p>
+<p>[packages]</p>
+<p>[dev-packages]</p>
+<p>[requires]<br>python_version = “3.6”</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pipenv install ipython</span><br><span class="line">pipenv shell</span><br><span class="line">ipython</span><br></pre></td></tr></table></figure>
       
     </div>
 
