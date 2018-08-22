@@ -1857,7 +1857,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #99ff87;
+  background: #ff4a50;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2609,4 +2609,15 @@ img.img-topic {
   line-height: 1;
   font-size: 1.5em;
   left: 18px;
+}
+code {
+  color: #111;
+  background: #fff;
+  border: 1px solid #bbb;
+  padding: 0.1em 0.4em;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 0.96em;
+  border-radius: 3px;
+  vertical-align: bottom;
+  word-wrap: break-word;
 }
