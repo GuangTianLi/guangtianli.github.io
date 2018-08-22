@@ -119,17 +119,18 @@
 
 
 
-  <meta name="description" content="title: Ubuntu16.04服务器基础构建date: 2018-08-01 12:00:00category:   Ubuntu setuptags: [“Ubuntu16.04”,”Server”,”setup”]image: images/sky.jpg  良好的基础决定上层建筑">
+  <meta name="description" content="良好的基础决定上层建筑">
+<meta name="keywords" content="Ubuntu16.04,setup,Server">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Soon">
+<meta property="og:title" content="Ubuntu16.04服务器基础构建">
 <meta property="og:url" content="https://guangtianli.github.io/Ubuntu/Ubuntu16.04服务器基础构建.html">
 <meta property="og:site_name" content="Soon">
-<meta property="og:description" content="title: Ubuntu16.04服务器基础构建date: 2018-08-01 12:00:00category:   Ubuntu setuptags: [“Ubuntu16.04”,”Server”,”setup”]image: images/sky.jpg  良好的基础决定上层建筑">
+<meta property="og:description" content="良好的基础决定上层建筑">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-22T08:30:46.789Z">
+<meta property="og:updated_time" content="2018-08-22T13:29:46.923Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Soon">
-<meta name="twitter:description" content="title: Ubuntu16.04服务器基础构建date: 2018-08-01 12:00:00category:   Ubuntu setuptags: [“Ubuntu16.04”,”Server”,”setup”]image: images/sky.jpg  良好的基础决定上层建筑">
+<meta name="twitter:title" content="Ubuntu16.04服务器基础构建">
+<meta name="twitter:description" content="良好的基础决定上层建筑">
 
 
 
@@ -146,7 +147,7 @@
   };
 </script>
 
-  <title> | Soon</title>
+  <title>Ubuntu16.04服务器基础构建 | Soon</title>
   
 
 
@@ -364,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">Ubuntu16.04服务器基础构建
               
             
           </h1>
@@ -389,7 +390,7 @@
                 
               
 
-              <time title="创建时间：2018-08-09 14:46:46" itemprop="dateCreated datePublished" datetime="2018-08-09T14:46:46+08:00">2018-08-09</time>
+              <time title="创建时间：2018-08-01 12:00:00" itemprop="dateCreated datePublished" datetime="2018-08-01T12:00:00+08:00">2018-08-01</time>
             
 
             
@@ -406,11 +407,36 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-22 16:30:46" itemprop="dateModified" datetime="2018-08-22T16:30:46+08:00">2018-08-22</time>
+                <time title="修改时间：2018-08-22 21:29:46" itemprop="dateModified" datetime="2018-08-22T21:29:46+08:00">2018-08-22</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Ubuntu/setup/" itemprop="url" rel="index"><span itemprop="name">setup</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -439,12 +465,7 @@
       
 
       
-        <p>title: Ubuntu16.04服务器基础构建<br>date: 2018-08-01 12:00:00<br>category: </p>
-<ul>
-<li>Ubuntu</li>
-<li>setup<br>tags: [“Ubuntu16.04”,”Server”,”setup”]<br>image: images/sky.jpg</li>
-</ul>
-<blockquote class="blockquote-center"><p>良好的基础决定上层建筑</p>
+        <blockquote class="blockquote-center"><p>良好的基础决定上层建筑</p>
 </blockquote>
 <a id="more"></a>
 <h1 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a>oh-my-zsh</h1><h2 id="安装前置依赖"><a href="#安装前置依赖" class="headerlink" title="安装前置依赖"></a>安装前置依赖</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install zsh git</span><br></pre></td></tr></table></figure>
@@ -458,7 +479,7 @@
 <p>安装完之后，配置阿里云镜像加速——<a href="https://cr.console.aliyun.com/cn-hangzhou/mirrors" target="_blank" rel="noopener">阿里云加速</a></p>
 <h2 id="可选安装-docker-compose"><a href="#可选安装-docker-compose" class="headerlink" title="可选安装 docker-compose"></a>可选安装 docker-compose</h2><p><a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">官方文档</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install docker-compose</span><br></pre></td></tr></table></figure></p>
 <h1 id="安装-Nginx"><a href="#安装-Nginx" class="headerlink" title="安装 Nginx"></a>安装 Nginx</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure>
-<h2 id="修复-Nginx-在-Ubuntu-下的-Bug"><a href="#修复-Nginx-在-Ubuntu-下的-Bug" class="headerlink" title="修复 Nginx 在 Ubuntu 下的 Bug"></a>修复 Nginx 在 Ubuntu 下的 Bug</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/systemd/system/nginx.service.d</span><br><span class="line">sudo <span class="built_in">printf</span> <span class="string">"[Service]\nExecStartPost=/bin/sleep 0.1\n"</span> &gt; /etc/systemd/system/nginx.service.d/override.conf</span><br><span class="line">systemctl daemon-reload</span><br><span class="line">sudo systemctl restart nginx</span><br></pre></td></tr></table></figure>
+<h2 id="修复-Nginx-在-Ubuntu-下的-Bug"><a href="#修复-Nginx-在-Ubuntu-下的-Bug" class="headerlink" title="修复 Nginx 在 Ubuntu 下的 Bug"></a>修复 Nginx 在 Ubuntu 下的 Bug</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/systemd/system/nginx.service.d</span><br><span class="line">sudo <span class="built_in">printf</span> <span class="string">"[Service]\nExecStartPost=/bin/sleep 0.1\n"</span> &gt; /etc/systemd/system/nginx.service.d/override.conf</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart nginx</span><br></pre></td></tr></table></figure>
 <h1 id="Supervisor"><a href="#Supervisor" class="headerlink" title="Supervisor"></a>Supervisor</h1><p>Supervisor是Unix平台下后台进程管理工具</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>由于Supervisor开发团队高稳定性的要求，目前PyPi上supervisor的版本只支持Python2， 意味着安装Supervisor只能通过<strong><em>pip2</em></strong> 安装:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip2 install supervisor</span><br></pre></td></tr></table></figure></p>
 <p>如果需要支持Python3，则需要直接安装<a href="https://github.com/Supervisor/supervisor" target="_blank" rel="noopener">github</a>上release的版本</p>
@@ -496,7 +517,7 @@
     <strong>本文作者： </strong>GuangTian Li</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://guangtianli.github.io/Ubuntu/Ubuntu16.04服务器基础构建.html" title="">https://guangtianli.github.io/Ubuntu/Ubuntu16.04服务器基础构建.html</a>
+    <a href="https://guangtianli.github.io/Ubuntu/Ubuntu16.04服务器基础构建.html" title="Ubuntu16.04服务器基础构建">https://guangtianli.github.io/Ubuntu/Ubuntu16.04服务器基础构建.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -507,6 +528,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Ubuntu16-04/" rel="tag"># Ubuntu16.04</a>
+          
+            <a href="/tags/setup/" rel="tag"># setup</a>
+          
+            <a href="/tags/Server/" rel="tag"># Server</a>
+          
+        </div>
+      
 
       
       
@@ -516,8 +547,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Vue/在Vue中使用scss.html" rel="next" title="在Vue中使用scss">
-                <i class="fa fa-chevron-left"></i> 在Vue中使用scss
+              <a href="/Python/Ubuntu16.04安装Python3.6.html" rel="next" title="Ubuntu16.04构建Python3.6开发环境">
+                <i class="fa fa-chevron-left"></i> Ubuntu16.04构建Python3.6开发环境
               </a>
             
           </div>
@@ -526,8 +557,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/CSS？？？.html" rel="prev" title="CSS？？？">
-                CSS？？？ <i class="fa fa-chevron-right"></i>
+              <a href="/Vue/VueJS项目初始化.html" rel="prev" title="VueJS项目初始化">
+                VueJS项目初始化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -637,9 +668,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -672,7 +701,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
