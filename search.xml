@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[命令参考手册]]></title>
-    <url>%2F%E5%91%BD%E4%BB%A4%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.html</url>
-    <content type="text"><![CDATA[时间就是生命 前言该博文用于记录一些常用或者可能会用到的快捷命令，以及一些程序或者配置文件的示范样例。 oh-my-zsh快捷命令git bisect命令帮助快速定位BUG所在改动，详细用法 12345678910111213141516171819202122232425262728293031323334353637383940alias g='git'alias ga='git add' # 添加文件到暂存区alias gaa='git add --all' # 添加所有文件到暂存区alias gb='git branch' # 列出所有本地分支alias gba='git branch -a' # 列出所有本地以及远程分支alias gbd='git branch -d' # 删除分支alias gbl='git blame -b -w' # 查看文件具体改动以及对应的改动者，忽略空格。alias gbnm='git branch --no-merged' # 打印未被合并的分支alias gbr='git branch --remote' # 只列出远端分支alias gbs='git bisect' alias gbsb='git bisect bad'alias gbsg='git bisect good'alias gbsr='git bisect reset'alias gbss='git bisect start'alias gc='git commit -v'alias gca='git commit -v -a'alias gcam='git commit -a -m'alias gcsm='git commit -s -m'alias gcb='git checkout -b'alias gcf='git config --list'alias gcl='git clone --recursive'alias gclean='git clean -fd'alias gpristine='git reset --hard &amp;&amp; git clean -dfx'alias gcm='git checkout master'alias gcd='git checkout develop'alias gcmsg='git commit -m'alias gco='git checkout'alias gcount='git shortlog -sn'alias gcp='git cherry-pick'alias gcpa='git cherry-pick --abort'alias gcpc='git cherry-pick --continue'alias gcs='git commit -S'alias gd='git diff'alias gdca='git diff --cached'alias gdct='git describe --tags `git rev-list --tags --max-count=1`'alias gdt='git diff-tree --no-commit-id --name-only -r'alias gdw='git diff --word-diff'alias gf='git fetch'alias gfa='git fetch --all --prune'alias gfo='git fetch origin' 永久添加环境变量1echo env=\"test\" &gt;&gt; /etc/environment]]></content>
+    <title><![CDATA[参考手册]]></title>
+    <url>%2F%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.html</url>
+    <content type="text"><![CDATA[工欲善其事，必先利其器 前言该博文用于记录一些非常实用插件以及工具，以及一些程序或者配置文件的示范样例。 theFucktheFuck是一款用于纠正前一个命令行命令。 安装OS X1brew install thefuck Ubuntu123sudo apt-get updatesudo apt-get install python3-dev python3-pipsudo pip3 install thefuck 使用 安装好之后务必将下面的命令添加至.zshrc文件 123eval $(thefuck --alias)# 或者设置其他别名eval $(thefuck --alias FUCK) 新打开一个终端会话 fuck oh-my-zsh插件zsh-autosuggestionszsh-autosuggestions是一款根据历史记录里的命令自动补全建议 克隆该项目到oh-my-zsh的plugins文件夹 1git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions 将该插件写入.zshrc文件：plugins=(zsh-autosuggestions) 新打开一个终端会话 gitwiki git bisect命令帮助快速定位BUG所在改动，详细用法 12345678910111213141516171819202122232425262728293031323334353637383940alias g='git'alias ga='git add' # 添加文件到暂存区alias gaa='git add --all' # 添加所有文件到暂存区alias gb='git branch' # 列出所有本地分支alias gba='git branch -a' # 列出所有本地以及远程分支alias gbd='git branch -d' # 删除分支alias gbl='git blame -b -w' # 查看文件具体改动以及对应的改动者，忽略空格。alias gbnm='git branch --no-merged' # 打印未被合并的分支alias gbr='git branch --remote' # 只列出远端分支alias gbs='git bisect' alias gbsb='git bisect bad'alias gbsg='git bisect good'alias gbsr='git bisect reset'alias gbss='git bisect start'alias gc='git commit -v'alias gca='git commit -v -a'alias gcam='git commit -a -m'alias gcsm='git commit -s -m'alias gcb='git checkout -b'alias gcf='git config --list'alias gcl='git clone --recursive'alias gclean='git clean -fd'alias gpristine='git reset --hard &amp;&amp; git clean -dfx'alias gcm='git checkout master'alias gcd='git checkout develop'alias gcmsg='git commit -m'alias gco='git checkout'alias gcount='git shortlog -sn'alias gcp='git cherry-pick'alias gcpa='git cherry-pick --abort'alias gcpc='git cherry-pick --continue'alias gcs='git commit -S'alias gd='git diff'alias gdca='git diff --cached'alias gdct='git describe --tags `git rev-list --tags --max-count=1`'alias gdt='git diff-tree --no-commit-id --name-only -r'alias gdw='git diff --word-diff'alias gf='git fetch'alias gfa='git fetch --all --prune'alias gfo='git fetch origin' 永久添加环境变量1echo env=\"test\" &gt;&gt; /etc/environment]]></content>
       <categories>
-        <category>Ubuntu</category>
+        <category>Unix-like</category>
         <category>reference</category>
       </categories>
       <tags>
@@ -16,13 +16,18 @@
   <entry>
     <title><![CDATA[CSS？？？]]></title>
     <url>%2FCSS%EF%BC%9F%EF%BC%9F%EF%BC%9F.html</url>
-    <content type="text"><![CDATA[真正的勇士敢于直面纷繁的叠层样式表 前言该博文主要用于记录各种在调整CSS以满足各种各样需求酷炫的效果中遇到的问题，以及解决方案。 CSS选择器基础类选择器类选择器允许以一种独立于文档元素的方式来指定样式。该选择器可以单独使用，也可以与其他元素结合使用。 要应用样式而不考虑具体设计的元素，最常用的方法就是使用类选择器。1&lt;p class="p-class"&gt;test&lt;/p&gt; 123.p-class &#123; color: red;&#125; ID选择器ID 选择器允许以一种独立于文档元素的方式来指定样式。意味着当需要某一特定的标签具有特定的效果时，ID选择器是最好的效果1&lt;p id="mostimportant"&gt;test&lt;/p&gt; 1234#mostimportant &#123; color: red; font-weight: bold; &#125; 分组选择当需要多个选择器都具有相同的CSS属性时，则可以使用分组选择申明。123&lt;p class="p-class"&gt;test&lt;/p&gt;&lt;h1 class="h1-class"&gt;test&lt;/h1&gt;&lt;h2&gt;test&lt;/h2&gt; 12345.p-class,.h1-class,h2 &#123; color: red;&#125; Footer置底最实用的Footer置底css设置–使用calc()实现动态计算。 1234&lt;div class="content"&gt; &lt;!-- content --&gt;&lt;/div&gt;&lt;div class="footer"&gt;footer&lt;/div&gt; 123456.content &#123; min-height: calc(100vh - （x + y)px); /*y为content与footer之间的距离*/&#125;.footer &#123; height: x px;&#125; flex布局2009年，W3C 提出了一种新的方案—-Flex 布局，可以简便、完整、响应式地实现各种页面布局。使用flex布局，既可以轻松实现各种布局方案。任何容器都可以使用display: flex启用flex布局。 水平布局而flex-direction属性决定主轴的方向（即项目的排列方向），它能取四个值： row（默认值）：主轴为水平方向，起点在左端。 row-reverse：主轴为水平方向，起点在右端。 column：主轴为垂直方向，起点在上沿。 column-reverse：主轴为垂直方向，起点在下沿。 那么实现水平布局即可轻松实现：1234&lt;div class="horizon"&gt; &lt;div&gt;row 1&lt;/div&gt; &lt;div&gt;row 2&lt;/div&gt;&lt;/div&gt; 1234.horizion &#123; dispaly: flex; flex-direction: row;&#125;]]></content>
+    <content type="text"><![CDATA[真正的勇士敢于直面纷繁的叠层样式表 前言该博文主要用于记录各种在调整CSS以满足各种各样需求酷炫的效果中遇到的问题，以及解决方案。 CSS选择器基础类选择器类选择器允许以一种独立于文档元素的方式来指定样式。该选择器可以单独使用，也可以与其他元素结合使用。 要应用样式而不考虑具体设计的元素，最常用的方法就是使用类选择器。1&lt;p class="p-class"&gt;test&lt;/p&gt; 123.p-class &#123; color: red;&#125; ID选择器ID 选择器允许以一种独立于文档元素的方式来指定样式。意味着当需要某一特定的标签具有特定的效果时，ID选择器是最好的效果1&lt;p id="mostimportant"&gt;test&lt;/p&gt; 1234#mostimportant &#123; color: red; font-weight: bold; &#125; 分组选择当需要多个选择器都具有相同的CSS属性时，则可以使用分组选择申明。123&lt;p class="p-class"&gt;test&lt;/p&gt;&lt;h1 class="h1-class"&gt;test&lt;/h1&gt;&lt;h2&gt;test&lt;/h2&gt; 12345.p-class,.h1-class,h2 &#123; color: red;&#125; Footer置底最实用的Footer置底css设置–使用calc()实现动态计算。 1234&lt;div class="content"&gt; &lt;!-- content --&gt;&lt;/div&gt;&lt;div class="footer"&gt;footer&lt;/div&gt; 123456.content &#123; min-height: calc(100vh - （x + y)px); /*y为content与footer之间的距离*/&#125;.footer &#123; height: x px;&#125; Modal设置最大高度以及滚动1234.modal .modal-body &#123; max-height: 420px; overflow-y: auto;&#125; flex布局2009年，W3C 提出了一种新的方案—-Flex 布局，可以简便、完整、响应式地实现各种页面布局。使用flex布局，既可以轻松实现各种布局方案。任何容器都可以使用display: flex启用flex布局。 水平布局而flex-direction属性决定主轴的方向（即项目的排列方向），它能取四个值： row（默认值）：主轴为水平方向，起点在左端。 row-reverse：主轴为水平方向，起点在右端。 column：主轴为垂直方向，起点在上沿。 column-reverse：主轴为垂直方向，起点在下沿。 那么实现水平布局即可轻松实现：1234&lt;div class="horizon"&gt; &lt;div&gt;row 1&lt;/div&gt; &lt;div&gt;row 2&lt;/div&gt;&lt;/div&gt; 1234.horizion &#123; dispaly: flex; flex-direction: row;&#125;]]></content>
       <categories>
         <category>css</category>
       </categories>
       <tags>
         <tag>css</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2FUbuntu%2FUbuntu16.04%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.html</url>
+    <content type="text"><![CDATA[title: Ubuntu16.04服务器基础构建date: 2018-08-01 12:00:00category: Ubuntu setuptags: [“Ubuntu16.04”,”Server”,”setup”]image: images/sky.jpg 良好的基础决定上层建筑 oh-my-zsh安装前置依赖1sudo apt-get install zsh git 安装 oh-my-zsh官方文档 1sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" 插件参考手册 安装Python3.6[参见] 前端安装 Node.js官方下载 或者直接通过包管理工具安装12curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs 安装并配置 npm12sudo apt-get install npmnpm config set registry=http://registry.npm.taobao.org Docker安装 Docker CE过程较多，直接参照官方文档 安装完之后，配置阿里云镜像加速——阿里云加速 可选安装 docker-compose官方文档1pip3 install docker-compose 安装 Nginx1sudo apt-get install nginx 修复 Nginx 在 Ubuntu 下的 Bug1234sudo mkdir /etc/systemd/system/nginx.service.dsudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" &gt; /etc/systemd/system/nginx.service.d/override.confsystemctl daemon-reloadsudo systemctl restart nginx SupervisorSupervisor是Unix平台下后台进程管理工具 安装由于Supervisor开发团队高稳定性的要求，目前PyPi上supervisor的版本只支持Python2， 意味着安装Supervisor只能通过pip2 安装:1pip2 install supervisor 如果需要支持Python3，则需要直接安装github上release的版本 配置文件Supervisor默认自动搜索 supervisor.conf 文件，以支持 supervisord 和 supervisortl 的运行。 默认搜索目录： $CWD/supervisord.conf $CWD/etc/supervisord.conf /etc/supervisord.conf /etc/supervisor/supervisord.conf (3.3.0 版本以上) ../etc/supervisord.conf (相对于执行目录) ../supervisord.conf (相对于执行目录) 详细配置直接参考官方文档 配置文件样例CertbotCertbot帮助网站自动免费生成HTTPS证书，并且自动续期。 官方文档 安装12345sudo apt-get updatesudo apt-get install software-properties-commonsudo add-apt-repository ppa:certbot/certbotsudo apt-get updatesudo apt-get install python-certbot-nginx]]></content>
   </entry>
   <entry>
     <title><![CDATA[在Vue中使用scss]]></title>
@@ -48,20 +53,6 @@
       <tags>
         <tag>setup</tag>
         <tag>Vue.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Ubuntu16.04服务器基础构建]]></title>
-    <url>%2FUbuntu%2FUbuntu16.04%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.html</url>
-    <content type="text"><![CDATA[工欲善其事，必先利其器 oh-my-zsh安装前置依赖1sudo apt-get install git 安装 oh-my-zsh官方文档 1sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" 快捷命令参考手册 安装Python3.6[参见] 前端安装 Node.js官方下载 或者直接通过包管理工具安装12curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs 安装并配置 npm12sudo apt-get install npmnpm config set registry=http://registry.npm.taobao.org Docker安装 Docker CE过程较多，直接参照官方文档 安装完之后，配置阿里云镜像加速——阿里云加速 可选安装 docker-compose官方文档1pip3 install docker-compose 安装 Nginx1sudo apt-get install nginx 修复 Nginx 在 Ubuntu 下的 Bug1234sudo mkdir /etc/systemd/system/nginx.service.dsudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" &gt; /etc/systemd/system/nginx.service.d/override.confsystemctl daemon-reloadsudo systemctl restart nginx SupervisorSupervisor是Unix平台下后台进程管理工具 安装由于Supervisor开发团队高稳定性的要求，目前PyPi上supervisor的版本只支持Python2， 意味着安装Supervisor只能通过pip2 安装:1pip2 install supervisor 如果需要支持Python3，则需要直接安装github上release的版本 配置文件Supervisor默认自动搜索 supervisor.conf 文件，以支持 supervisord 和 supervisortl 的运行。 默认搜索目录： $CWD/supervisord.conf $CWD/etc/supervisord.conf /etc/supervisord.conf /etc/supervisor/supervisord.conf (3.3.0 版本以上) ../etc/supervisord.conf (相对于执行目录) ../supervisord.conf (相对于执行目录) 详细配置直接参考官方文档 配置文件样例CertbotCertbot帮助网站自动免费生成HTTPS证书，并且自动续期。 官方文档 安装12345sudo apt-get updatesudo apt-get install software-properties-commonsudo add-apt-repository ppa:certbot/certbotsudo apt-get updatesudo apt-get install python-certbot-nginx]]></content>
-      <categories>
-        <category>Ubuntu</category>
-        <category>setup</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu16.04</tag>
-        <tag>setup</tag>
-        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
