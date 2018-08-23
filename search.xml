@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[参考手册]]></title>
-    <url>%2F%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.html</url>
+    <title><![CDATA[效率]]></title>
+    <url>%2F%E6%95%88%E7%8E%87.html</url>
     <content type="text"><![CDATA[工欲善其事，必先利其器 前言该博文用于记录一些非常实用插件以及工具，以及一些程序或者配置文件的示范样例。 theFucktheFuck是一款用于纠正前一个命令行命令。123456➜ ~ mkdir no-exist/no-existmkdir: no-exist: No such file or directory➜ ~ fuckmkdir -p no-exist/no-exist [enter/↑/↓/ctrl+c]➜ ~ cd no-exist/no-exist➜ no-exist 安装OS X1brew install thefuck Ubuntu theFuck需要安装Python3.4+作为前置依赖，[参见] 1sudo pip3.6 install thefuck 使用 安装好之后务必将下面的命令添加至.zshrc文件 123eval $(thefuck --alias)# 或者设置其他别名eval $(thefuck --alias FUCK) 新打开一个终端会话 fuck oh-my-zsh插件zsh-autosuggestionszsh-autosuggestions是一款根据历史记录里的命令自动补全建议 克隆该项目到oh-my-zsh的plugins文件夹 1git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions 将该插件写入.zshrc文件：plugins=(zsh-autosuggestions) 新打开一个终端会话 gitwiki git bisect命令帮助快速定位BUG所在改动，详细用法 12345678910111213141516171819202122232425262728293031323334353637383940alias g='git'alias ga='git add' # 添加文件到暂存区alias gaa='git add --all' # 添加所有文件到暂存区alias gb='git branch' # 列出所有本地分支alias gba='git branch -a' # 列出所有本地以及远程分支alias gbd='git branch -d' # 删除分支alias gbl='git blame -b -w' # 查看文件具体改动以及对应的改动者，忽略空格。alias gbnm='git branch --no-merged' # 打印未被合并的分支alias gbr='git branch --remote' # 只列出远端分支alias gbs='git bisect' alias gbsb='git bisect bad'alias gbsg='git bisect good'alias gbsr='git bisect reset'alias gbss='git bisect start'alias gc='git commit -v'alias gca='git commit -v -a'alias gcam='git commit -a -m'alias gcsm='git commit -s -m'alias gcb='git checkout -b'alias gcf='git config --list'alias gcl='git clone --recursive'alias gclean='git clean -fd'alias gpristine='git reset --hard &amp;&amp; git clean -dfx'alias gcm='git checkout master'alias gcd='git checkout develop'alias gcmsg='git commit -m'alias gco='git checkout'alias gcount='git shortlog -sn'alias gcp='git cherry-pick'alias gcpa='git cherry-pick --abort'alias gcpc='git cherry-pick --continue'alias gcs='git commit -S'alias gd='git diff'alias gdca='git diff --cached'alias gdct='git describe --tags `git rev-list --tags --max-count=1`'alias gdt='git diff-tree --no-commit-id --name-only -r'alias gdw='git diff --word-diff'alias gf='git fetch'alias gfa='git fetch --all --prune'alias gfo='git fetch origin' 永久添加环境变量1echo env=\"test\" &gt;&gt; /etc/environment]]></content>
       <categories>
-        <category>Unix-like</category>
-        <category>reference</category>
+        <category>效率</category>
+        <category>awesome</category>
       </categories>
       <tags>
-        <tag>Ubuntu</tag>
-        <tag>reference</tag>
+        <tag>awesome</tag>
       </tags>
   </entry>
   <entry>
@@ -46,8 +45,8 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>Vue.js</tag>
         <tag>setup</tag>
+        <tag>Vue.js</tag>
       </tags>
   </entry>
   <entry>
@@ -59,8 +58,8 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>setup</tag>
         <tag>Ubuntu16.04</tag>
+        <tag>setup</tag>
         <tag>Server</tag>
       </tags>
   </entry>
@@ -73,9 +72,9 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>setup</tag>
-        <tag>Ubuntu16.04</tag>
         <tag>Python</tag>
+        <tag>Ubuntu16.04</tag>
+        <tag>setup</tag>
       </tags>
   </entry>
   <entry>
