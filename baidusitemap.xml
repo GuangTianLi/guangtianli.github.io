@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://blog.instcode.top/%E6%95%88%E7%8E%87.html</loc>
-    <lastmod>2018-08-23T13:01:44.263Z</lastmod>
+    <lastmod>2018-08-24T11:19:36.694Z</lastmod>
     <data>
         <display>
         <title>效率</title>
@@ -28,7 +28,7 @@
     
   <url>
     <loc>https://blog.instcode.top/Ubuntu/Ubuntu16.04%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.html</loc>
-    <lastmod>2018-08-22T13:29:46.923Z</lastmod>
+    <lastmod>2018-08-24T11:17:59.951Z</lastmod>
     <data>
         <display>
         <title>Ubuntu16.04服务器基础构建</title>
@@ -36,9 +36,9 @@
         
         <tag>Ubuntu16.04</tag>
          
-        <tag>Server</tag>
-         
         <tag>setup</tag>
+         
+        <tag>Server</tag>
          
          
            
@@ -47,6 +47,31 @@
           
              
               <breadCrumb title="setup" url="https://blog.instcode.top/categories/Ubuntu/setup/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.instcode.top/Vue/VueJS%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.html</loc>
+    <lastmod>2018-08-24T11:15:18.148Z</lastmod>
+    <data>
+        <display>
+        <title>VueJS项目初始化</title>
+        <pubTime>2018-08-07T04:28:45.000Z</pubTime>
+        
+        <tag>setup</tag>
+         
+        <tag>Vue.js</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vue.js" url="https://blog.instcode.top/categories/Vue-js/"/>
+          
+             
+              <breadCrumb title="setup" url="https://blog.instcode.top/categories/Vue-js/setup/"/>
           
         </display>
     </data>
@@ -81,11 +106,11 @@
         <title>Ubuntu16.04构建Python3.6开发环境</title>
         <pubTime>2018-01-08T04:00:00.000Z</pubTime>
         
+        <tag>Python</tag>
+         
         <tag>Ubuntu16.04</tag>
          
         <tag>setup</tag>
-         
-        <tag>Python</tag>
          
          
            
@@ -94,31 +119,6 @@
           
              
               <breadCrumb title="setup" url="https://blog.instcode.top/categories/Python/setup/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://blog.instcode.top/Vue/VueJS%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.html</loc>
-    <lastmod>2018-08-09T13:33:34.586Z</lastmod>
-    <data>
-        <display>
-        <title>VueJS项目初始化</title>
-        <pubTime>2018-08-07T04:28:45.000Z</pubTime>
-        
-        <tag>setup</tag>
-         
-        <tag>Vue.js</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue.js" url="https://blog.instcode.top/categories/Vue-js/"/>
-          
-             
-              <breadCrumb title="setup" url="https://blog.instcode.top/categories/Vue-js/setup/"/>
           
         </display>
     </data>
