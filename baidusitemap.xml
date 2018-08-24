@@ -4,6 +4,34 @@
 
     
   <url>
+    <loc>https://blog.instcode.top/Vue/%E5%9C%A8Vue%E4%B8%AD%E4%BD%BF%E7%94%A8scss.html</loc>
+    <lastmod>2018-08-24T13:15:04.206Z</lastmod>
+    <data>
+        <display>
+        <title>在Vue中使用scss</title>
+        <pubTime>2018-08-09T06:28:00.000Z</pubTime>
+        
+        <tag>Vue.js</tag>
+         
+        <tag>scss</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vue.js" url="https://blog.instcode.top/categories/Vue-js/"/>
+          
+             
+              <breadCrumb title="scss" url="https://blog.instcode.top/categories/Vue-js/scss/"/>
+          
+             
+              <breadCrumb title="css" url="https://blog.instcode.top/categories/Vue-js/scss/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://blog.instcode.top/%E6%95%88%E7%8E%87.html</loc>
     <lastmod>2018-08-24T11:19:36.694Z</lastmod>
     <data>
@@ -119,31 +147,6 @@
           
              
               <breadCrumb title="setup" url="https://blog.instcode.top/categories/Python/setup/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://blog.instcode.top/Vue/%E5%9C%A8Vue%E4%B8%AD%E4%BD%BF%E7%94%A8scss.html</loc>
-    <lastmod>2018-08-09T13:32:53.242Z</lastmod>
-    <data>
-        <display>
-        <title>在Vue中使用scss</title>
-        <pubTime>2018-08-09T06:28:45.000Z</pubTime>
-        
-        <tag>Vue.js</tag>
-         
-        <tag>scss</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue.js" url="https://blog.instcode.top/categories/Vue-js/"/>
-          
-             
-              <breadCrumb title="scss" url="https://blog.instcode.top/categories/Vue-js/scss/"/>
           
         </display>
     </data>
