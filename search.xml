@@ -45,8 +45,8 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>setup</tag>
         <tag>Vue.js</tag>
+        <tag>setup</tag>
       </tags>
   </entry>
   <entry>
@@ -58,8 +58,8 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>Ubuntu16.04</tag>
         <tag>setup</tag>
+        <tag>Ubuntu16.04</tag>
         <tag>Server</tag>
       </tags>
   </entry>
@@ -72,9 +72,9 @@
         <category>setup</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-        <tag>Ubuntu16.04</tag>
         <tag>setup</tag>
+        <tag>Ubuntu16.04</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
