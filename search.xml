@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python的SQL性能测试]]></title>
+    <url>%2FPython%2FPython%E7%9A%84SQL%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.html</url>
+    <content type="text"><![CDATA[“实践是检验真理的唯一标准”前言测试异步与同步下Python对于PostgreSQL数据库操作的性能通过测试同步以及异步下对于数据库的增加和查找操作，以进行性能评估。更直观的以及量化地感受同步以及异步下的性能差距。环境初始化需要安装pipenv，详细内容可参考12345pip3.6 install pipenvgit clone https://github.com/GuangTianLi/python-sql-performance.gitcd python-sql-performancepipenv syncpipenv shellSQL操作性能评估1234567891011python postgresql_speed_test.py DBAPI: psycopg2 11004 function calls in 2.235 seconds DBAPI: asyncpg 471973 function calls in 2.436 seconds DBAPI: uvloop 206945 function calls in 0.794 seconds DBAPI: psycopg2, total seconds 2.558364 DBAPI: asyncpg, total seconds 2.309759 DBAPI: uvloop, total seconds 2.032303结论从结果上看，对于数据库操作本身，异步对于其性能本身只能算是锦上添花。而异步操作本身则也需要添加对事件循环的处理，等于是变相的增加了运行时间，而如果每个数据库操作本身所需要的时间小于事件循环处理的时间，则其总时间就是增加的。所以异步架构在用于单纯的数据库操作时，并不能取得非常良好的性能优化，数据库操作本身的优化还是依赖于操作本身以及数据库结构的优化。WebServer性能评估flask1python flask_server_speed_test.py123456789wrk -d 60 -c 100 -t 12 --timeout 8 http://127.0.0.1:8080/dbRunning 1m test @ http://127.0.0.1:8080/db 12 threads and 100 connections Thread Stats Avg Stdev Max +/- Stdev Latency 331.47ms 221.85ms 2.01s 89.71% Req/Sec 30.95 17.90 80.00 63.85% 18597 requests in 1.00m, 3.10MB readRequests/sec: 309.41Transfer/sec: 52.88KBsanic1python sanic_server_speed_test.py123456789wrk -d 60 -c 100 -t 12 --timeout 8 http://127.0.0.1:8080/dbRunning 1m test @ http://127.0.0.1:8080/db 12 threads and 100 connections Thread Stats Avg Stdev Max +/- Stdev Latency 162.95ms 99.56ms 1.89s 87.88% Req/Sec 52.26 23.73 148.00 61.57% 36702 requests in 1.00m, 4.83MB readRequests/sec: 610.64Transfer/sec: 82.29KB结论从中等量级的压测的结果上看，对于异步架构的网络服务器，在性能上有了很大的提升。]]></content>
+      <categories>
+        <category>Python</category>
+        <category>Performance</category>
+        <category>SQL</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Performance</tag>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[效率]]></title>
     <url>%2F%E6%95%88%E7%8E%87.html</url>
     <content type="text"><![CDATA[工欲善其事，必先利其器前言该博文用于记录一些非常实用插件以及工具，以及一些程序或者配置文件的示范样例。theFucktheFuck是一款用于纠正前一个命令行命令。123456➜ ~ mkdir no-exist/no-existmkdir: no-exist: No such file or directory➜ ~ fuckmkdir -p no-exist/no-exist [enter/↑/↓/ctrl+c]➜ ~ cd no-exist/no-exist➜ no-exist安装OS X1brew install thefuckUbuntutheFuck需要安装Python3.4+作为前置依赖，[参见]1sudo pip3.6 install thefuck使用安装好之后务必将下面的命令添加至.zshrc文件123eval $(thefuck --alias)# 或者设置其他别名eval $(thefuck --alias FUCK)新打开一个终端会话fuckoh-my-zsh插件zsh-autosuggestionszsh-autosuggestions是一款根据历史记录里的命令自动补全建议克隆该项目到oh-my-zsh的plugins文件夹1git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions将该插件写入.zshrc文件：plugins=(zsh-autosuggestions)新打开一个终端会话gitgit插件设置了一些常用git命令的缩写，以及常用git相关函数，详细参见wikigit bisect命令帮助快速定位BUG所在改动，详细用法12345678910111213141516171819202122232425262728293031323334353637383940alias g='git'alias ga='git add' # 添加文件到暂存区alias gaa='git add --all' # 添加所有文件到暂存区alias gb='git branch' # 列出所有本地分支alias gba='git branch -a' # 列出所有本地以及远程分支alias gbd='git branch -d' # 删除分支alias gbl='git blame -b -w' # 查看文件具体改动以及对应的改动者，忽略空格。alias gbnm='git branch --no-merged' # 打印未被合并的分支alias gbr='git branch --remote' # 只列出远端分支alias gbs='git bisect' alias gbsb='git bisect bad'alias gbsg='git bisect good'alias gbsr='git bisect reset'alias gbss='git bisect start'alias gc='git commit -v'alias gca='git commit -v -a'alias gcam='git commit -a -m'alias gcsm='git commit -s -m'alias gcb='git checkout -b'alias gcf='git config --list'alias gcl='git clone --recursive'alias gclean='git clean -fd'alias gpristine='git reset --hard &amp;&amp; git clean -dfx'alias gcm='git checkout master'alias gcd='git checkout develop'alias gcmsg='git commit -m'alias gco='git checkout'alias gcount='git shortlog -sn'alias gcp='git cherry-pick'alias gcpa='git cherry-pick --abort'alias gcpc='git cherry-pick --continue'alias gcs='git commit -S'alias gd='git diff'alias gdca='git diff --cached'alias gdct='git describe --tags `git rev-list --tags --max-count=1`'alias gdt='git diff-tree --no-commit-id --name-only -r'alias gdw='git diff --word-diff'alias gf='git fetch'alias gfa='git fetch --all --prune'alias gfo='git fetch origin'永久添加环境变量1echo env=\"test\" &gt;&gt; /etc/environment]]></content>
@@ -60,8 +75,8 @@
       </categories>
       <tags>
         <tag>Ubuntu16.04</tag>
-        <tag>setup</tag>
         <tag>Server</tag>
+        <tag>setup</tag>
       </tags>
   </entry>
   <entry>
